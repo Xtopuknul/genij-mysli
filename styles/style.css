@@ -1,0 +1,128 @@
+html {
+    font-size: 30px;
+    font-family: "Oswald", "sans-serif";
+    background-color: rgb(133, 0, 0);
+   
+}
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: rgb(88, 80, 192);
+    text-shadow: 3px 3px 5px black;
+}
+#bib a:hover {
+color: aquamarine;
+}
+
+#bib:hover {
+    transform: translate(0, 3px) scale(1.1);
+
+transition: all 0.3s linear;
+}
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+    background-color: rgb(156, 129, 255);
+    color: #201f1f;
+    
+    
+    }
+p,
+li {
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+#bib {
+    border: 2px solid black;
+    border-radius: 8px;
+    max-width: 14vw;
+    min-width: 10vw;
+    height: auto;
+    background-color: #a13ac0;
+    padding: 0;
+    margin: 20px 0;
+    box-shadow: 3px 3px 5px black;
+
+    transition: all 0.5s linear;
+}
+
+#bib a{ display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+
+img {
+width: 100%;
+    max-width: 600px;
+}
+
+.biba {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+font-size: 2em;
+color: blanchedalmond;
+}
+
+blockquote {
+background-color: #470088;
+border: 9px solid rgb(80, 2, 47);}
+
+#sis {
+    max-width: 600px;
+    min-height: auto;
+}
+
+/*var myHeading = document.querySelector("h1");
+myHeading.textContent = "Hello world!";
+
+var myImage = document.querySelector("img");
+
+myImage.onclick = function () {
+  var mySrc = myImage.getAttribute("src");
+  
+  if (mySrc === "images/фотОчка.jpeg") {
+    myImage.setAttribute("src", "images/kloun.jpeg");
+  } else if (mySrc === "images/kloun.jpeg") {
+    myImage.setAttribute("src", "images/hih.jpeg");
+  } else {
+    myImage.setAttribute("src", "images/фотОчка.jpeg");
+  }
+};
+
+var myButton = document.querySelector("#myButton"); // Правильный выбор кнопки
+var myHeading = document.querySelector("#myHeading"); // Убираем дублирование
+
+function setUserName() {
+  var myName = prompt("Please enter your name.");
+  localStorage.setItem("name", myName);
+  myHeading.textContent = "Гений он и в гробу гений, " + myName;
+}
+
+if (!localStorage.getItem("name")) {
+  setUserName();
+} else {
+  var storedName = localStorage.getItem("name");
+  myHeading.textContent = "Гений он и в гробу гений, " + storedName;
+}
+
+myButton.onclick = function () {
+  setUserName();
+};
+
+function multiply(num1, num2) {
+  return num1 + num2; // Умножаем два аргумента
+}
+
+// Вызываем функцию с аргументами 5 и 3
+console.log(multiply(5, 505)); // Должно вывести 15
